@@ -9,6 +9,7 @@ class Particle {
     this.mass=1;
   }
   applyForce(force) {
+    force.div(mass);
         let f = p5.Vector.div(force, this.mass);
         this.acceleration.add(f);
   }
