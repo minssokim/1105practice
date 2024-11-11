@@ -23,7 +23,7 @@ function draw() {
 function mouseClicked() {
   let mPos = createVector(mouseX, mouseY);
   let Magnet = p5.Vector.sub(mPos, ball.pos);
-  Magnet.mult(0.1);
+  Magnet.mult(0.08);
   ball.addForce(Magnet);
  ball.applyForce(Magnet)
 }
