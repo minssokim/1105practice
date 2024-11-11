@@ -6,8 +6,12 @@ class Particle {
 
     this.c = color(0);
     this.w = 50;
+    this.mass=1;
   }
-
+  applyForce(force) {
+        let f = p5.Vector.div(force, this.mass);
+        this.acceleration.add(f);
+  }
   addForce(aForce) {
     this.acc.add(aForce);
   }
