@@ -1,5 +1,6 @@
 let ball;
 
+
 function setup() {
   createCanvas(400, 200);
 
@@ -15,6 +16,7 @@ function draw() {
 
   ball.update();
   ball.show();
+  ball.checkEdge();
 }
   
 
@@ -23,6 +25,6 @@ function mouseClicked() {
   let Magnet = p5.Vector.add(ball.pos, mPos);
   Magnet.mult(0.1);
   ball.addForce(Magnet);
-  ball.checkEdge()
+ 
 }
 
