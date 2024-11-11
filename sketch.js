@@ -7,7 +7,7 @@ function setup() {
 }
 
 
-function draw() {
+/*function draw() {
   background(220);
 
   let gravity = createVector(0, 0.3);
@@ -16,6 +16,7 @@ function draw() {
   ball.update();
   ball.show();
 }
+  */
 
 function Magnet() {
   let mPos = createVector(mouseX, mouseY);
