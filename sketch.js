@@ -23,5 +23,6 @@ function mouseClicked() {
   let Magnet = p5.Vector.add(ball.pos, mPos);
   Magnet.mult(0.1);
   ball.addForce(Magnet);
+  ball.checkEdge()
 }
 
