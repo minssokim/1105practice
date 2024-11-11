@@ -7,18 +7,18 @@ function setup() {
 }
 
 
-/*function draw() {
+function draw() {
   background(220);
 
-  let gravity = createVector(0, 0.3);
-  ball.addForce(gravity);
+  //let gravity = createVector(0, 0.3);
+ // ball.addForce(gravity);
 
   ball.update();
   ball.show();
 }
-  */
+  
 
-function Magnet() {
+function mouseClicked() {
   let mPos = createVector(mouseX, mouseY);
   let Magnet = p5.Vector.add(ball.pos, mPos);
   Magnet.mult(0.1);
